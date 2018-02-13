@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+
+    <!-- reset style sheet -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Link to bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <!-- mystyle sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Crystals Collector</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body panelBox">
+                        <h3 class="instructions">How To Play</h3>
+                        <p class="instructions">
+                            You are given a randm target number. Each crystal is assigned a random
+                            value, which is hidden from you. 
+                        </p>
+                        <p class="instructions">
+                            Your job is to click on the crystals to get your score to match the target number.
+                            Your score will go up each time you click on a crystal. Pay attention to how much 
+                            each crystal is worth as you click on them.
+                        </p>
+                        <p class="instructions">
+                            If you can match your score to the target number, you win! If you go over
+                            the target number, you lose. After each round, a new random target number
+                            will be selected and the crystals will be assigned new random values.
+                        </p>
+                    </div>
+                </div>
+            </div> <!--end col-->
+        </div>
+
+        <div class="row">
+            <!-- left column -->
+            <div class="col-lg-6">
+
+                <!-- status box -->
+                <div class="panel panel-default">
+                    <div class="panel-body panelBox">
+                        <div>
+                            <h2 class="text-center" id="status">Ready To Play</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- crystal images panel -->
+                <div class="panel panel-default">
+                    <div class="panel-body panelBox">
+                        <div id="crystals">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Left Column -->
+            
+            <!-- right column -->
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-body panelBox">
+                        <div>
+                            <h3 class="text-center">Target Number</h3>
+                            <h3 class="text-center" id="randomTargetNumber"></h3>
+                        </div>
+                        <hr>
+                        <div>
+                            <h3 class="text-center">Your Score</h3>
+                            <h3 class="text-center" id="score">0</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- win/loss box -->
+                <div class="panel panel-default">
+                    <div class="panel-body panelBox">
+                        <div>
+                            <!-- wins -->
+                            <div class="col-md-6">
+                                <div>
+                                    <h4 id="wins"> Wins: </h4>
+                                </div>
+                            </div>
+                            <!-- losses -->
+                            <div class="col-md-6">
+                                <div>
+                                    <h4 id="losses"> Losses: </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--End win/loss Box-->
+            </div> <!-- End Right Column-->
+        </div>
+        <!-- End Row -->
+    </div>
+    <!-- End Container -->
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
